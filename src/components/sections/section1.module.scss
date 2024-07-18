@@ -1,0 +1,97 @@
+.section1 {
+    padding-top: 5.5rem;
+    width: calc(100% - 30px);
+    margin: 0 auto;
+    max-width: 1380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items at the start to prevent image shift */
+    width: 100%;
+}
+
+.text {
+    flex: 1;
+    color: white;
+}
+
+.s1intro {
+    font-weight: 900;
+    font-size: 80px;
+    margin-bottom: 2rem;
+}
+
+.fillskill {
+    font-size: 30px;
+    margin-bottom: 2rem;
+}
+
+.contactButton {
+    background-color: #1a73e8;
+    font-size: 24px;
+    color: white;
+    font-weight: 900;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 15rem; /* Move the button down by 15rem */
+}
+
+.imageContainer {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start; /* Keep the image aligned at the start */
+}
+
+.oldman {
+    width: 800px;
+    max-width: 800px;
+    height: auto;
+    border-radius: 10px;
+    /* Adjusting margin if needed to correct any displacement */
+    margin-top: 4rem; /* Negative margin to offset the button's margin */
+}
+
+
+@media screen and (max-width: 1180px) {
+    .imageContainer {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center; /* Keep the image aligned at the start */
+    }
+    .oldman {
+        width: 400px;
+        max-width: 400px;
+        height: auto;
+        border-radius: 10px;
+        /* Adjusting margin if needed to correct any displacement */
+        margin-top: -30rem;
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start; /* Align items at the start to prevent image shift */
+        width: 100%;
+    }
+    .contactButton {
+        background-color: #1a73e8;
+        font-size: 24px;
+        color: white;
+        font-weight: 900;
+        padding: 1rem 2rem;
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
+        margin-top: 20rem; /* Move the button down by 15rem */
+    }
+}
