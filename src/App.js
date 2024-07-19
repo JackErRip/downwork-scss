@@ -20,25 +20,21 @@ function App() {
         <div>    
           
           <Section1 />
-          {/* <TrustedBy />
-          
-          Container for Section2 and YouTubeEmbeded
-        
-          
-              <Section2 />
+          <TrustedBy />
+          <Section2 />
             
             
             
-              <YouTubeEmbeded  ytLink={`https://www.youtube.com/embed/EE-xtCF3T94`} />
+              
             
           
           
-          <Section3 />
+          {/* <Section3 />
           <Section4 />
           <Section5 />
           
-          <Section6 />  */}
-          
+          <Section6 />  
+           */}
           
         </div>
       </div>

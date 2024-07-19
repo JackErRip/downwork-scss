@@ -1,8 +1,11 @@
 import React from 'react';
+import s2styles from './s2Ye.module.scss'
 
 function YouTubeEmbeded({ ytLink, classname }) {
+  console.log(classname);
+
   return (
-    <div className={classname}>
+    <div className={s2styles[classname]}>
       <div>
         <iframe
           

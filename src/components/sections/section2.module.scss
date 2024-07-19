@@ -1,0 +1,84 @@
+.section2 {
+    padding-top: 3.5rem;
+    width: calc(100% - 30px);
+    margin: 0 auto;
+    max-width: 1380px;
+    display: flex;
+    flex-direction: row;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.howitworks {
+    display: flex;
+    color: white;
+    font-family: Arial;
+    font-weight: 900;
+    font-size: 3rem;
+    align-items: baseline;
+}
+
+.licontainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.desctext1 {
+    display: flex;
+    color: white;
+    font-family: Arial;
+    font-weight: 400;
+    font-size: 1.5rem;
+    align-items: baseline;
+    flex-direction: row;
+    margin: 2rem 1rem;
+}
+
+.desctext2 {
+    display: flex;
+    color: white;
+    font-family: Arial;
+    font-weight: 400;
+    font-size: 1.5rem;
+    align-items: baseline;
+    flex-direction: row;
+    margin: 2rem 1rem;
+}
+
+.desctext3 {
+    display: flex;
+    color: white;
+    font-family: Arial;
+    font-weight: 400;
+    font-size: 1.5rem;
+    align-items: baseline;
+    flex-direction: row;
+    margin: 2rem 1rem;
+}
+
+.yecontainerlandscape {
+    display: flex;
+    flex-direction: row;
+}
+
+.yecontainer {
+    display: flex;
+    flex-direction: row;
+    display: none
+}
+
+@media screen and (max-width: 864px) {
+    .yecontainerlandscape {
+        display: flex;
+        flex-direction: row;
+        display: none
+    }
+    .yecontainer {
+        display: flex;
+        flex-direction: row;
+        display: flex
+    }
+}

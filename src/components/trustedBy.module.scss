@@ -1,0 +1,86 @@
+.trustedby {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% - 30px);
+    padding: 2rem 0; /* Added padding for spacing */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.trustedbytext {
+    font-size: 30px;
+    font-family: Arial;
+    color: white;
+    margin-bottom: 2rem; /* Added margin for spacing */
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap; /* Allows images to wrap to the next line if needed */
+    justify-content: center;
+    gap: 2rem; /* Adds space between images */
+}
+
+.microsoft, .automattic, .bissell {
+    max-width: 100%;
+}
+
+.microsoft {
+    width: 25%;
+    height: 100%;
+}
+
+.automattic {
+    margin-top: 0.4rem;
+    width: 50%;
+    height: 100%;
+}
+
+.bissell {
+    width: 14%;
+    height: 100%;
+    margin-top: -1rem;
+}
+
+@media screen and (max-width: 1320px) {
+    .trustedbytext {
+        font-size: 20px;
+    }
+
+    .microsoft {
+        width: 25%;
+        height: 100%;
+    }
+    
+    .automattic {
+        width: 40%;
+        height: 100%;
+    }
+    
+    .bissell {
+        width: 15%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 1192px) {
+    .trustedbytext {
+        font-size: 20px;
+        text-align: start;
+    }
+    
+    .microsoft, .automattic, .bissell {
+        margin-left: 1rem;
+        display: flex;
+        justify-content: center;
+        height: 100%;   
+        width: 20%;
+    }
+}

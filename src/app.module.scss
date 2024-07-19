@@ -1,7 +1,10 @@
 .bg {
     background-color: hsl(from hsl(3, 0%, 8%) h s l);
-    height: 1100px;
-}
+    height: calc(100% - 100px);
+    width: 100%;
+    box-sizing: border-box;
+  }
+   
 
 .pad {
     width: calc(100% - 30px);

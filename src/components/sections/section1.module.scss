@@ -23,13 +23,15 @@
 
 .s1intro {
     font-weight: 900;
-    font-size: 80px;
+    font-size: 70px;
     margin-bottom: 2rem;
+    font-family: Arial;
 }
 
 .fillskill {
     font-size: 30px;
     margin-bottom: 2rem;
+    font-family: Arial;
 }
 
 .contactButton {
@@ -60,6 +62,16 @@
     margin-top: 4rem; /* Negative margin to offset the button's margin */
 }
 
+@media screen and (max-width: 1400px) {
+    .oldman {
+        width: 700px;
+        max-width: 700px;
+        height: auto;
+        border-radius: 10px;
+        /* Adjusting margin if needed to correct any displacement */
+        margin-top: 4rem; /* Negative margin to offset the button's margin */
+    }
+}
 
 @media screen and (max-width: 1180px) {
     .imageContainer {
@@ -74,7 +86,7 @@
         height: auto;
         border-radius: 10px;
         /* Adjusting margin if needed to correct any displacement */
-        margin-top: -30rem;
+        margin-top: -34rem;
     }
     .content {
         display: flex;
@@ -88,10 +100,61 @@
         font-size: 24px;
         color: white;
         font-weight: 900;
-        padding: 1rem 2rem;
+        padding-bottom: 1rem;
+        font-family: Arial, sans-serif;
         border: none;
         border-radius: 15px;
         cursor: pointer;
-        margin-top: 20rem; /* Move the button down by 15rem */
+        margin-top: 25rem; /* Move the button down by 30rem */
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 1380px;
+    }
+    .s1intro {
+        font-weight: 900;
+        font-size: 65px;
+        margin-bottom: 2rem;
+        font-family: Arial;
+    }
+    .fillskill {
+        font-size: 30px;
+        margin-top: 6rem;
+        font-family: Arial;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .s1intro {
+        font-weight: 900;
+        font-size: 40px;
+        margin-bottom: 2rem;
+        font-family: Arial;
+    }
+    .fillskill {
+        font-size: 20px;
+        margin-top: 1rem;
+        font-family: Arial;
+    } 
+    .oldman {
+        width: 400px;
+        max-width: 375px;
+        height: auto;
+        border-radius: 10px;
+        /* Adjusting margin if needed to correct any displacement */
+        margin-top: -35rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .oldman {
+        width: 400px;
+        max-width: 330px;
+        height: auto;
+        border-radius: 10px;
+        /* Adjusting margin if needed to correct any displacement */
+        margin-top: -35rem;
     }
 }
