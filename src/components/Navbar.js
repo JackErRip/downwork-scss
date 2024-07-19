@@ -5,9 +5,9 @@ function Navbar() {
     return (
         <div className={styles.nav}>
             <div className={styles.navcontainer}>
-                <h1 className={styles.downwork}>
+                <a className={styles.downwork} href="/">
                     downwork
-                </h1>
+                </a>
             </div>
                 <hr className={styles.hrline} />
         </div>
