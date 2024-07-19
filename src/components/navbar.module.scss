@@ -6,6 +6,7 @@
 } 
 
 .navcontainer {
+    background: hsl(from hsl(0, 0%, 5%) h s l);
     margin: 0 auto;
     max-width: 1680px;
     height: 100%;
@@ -20,6 +21,7 @@
 
 .downwork {
     color: hsl(from hsl(217, 91%, 60%) h s l);
+    background: hsl(from hsl(0, 0%, 5%) h s l);
     font-size: 35px;
     font-weight: 900;
     // display: flex;
