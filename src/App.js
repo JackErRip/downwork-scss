@@ -1,4 +1,4 @@
-import './App.css'; // Ensure this file includes the CSS to handle body styles and other base styles
+// import './App.css'; // Ensure this file includes the CSS to handle body styles and other base styles
 import Section1 from './components/sections/Section1';
 import TrustedBy from './components/TrustedBy';
 import Section2 from './components/sections/Section2';
@@ -15,22 +15,20 @@ function App() {
   return (
     <div className={styles.bg}>
       <div className={styles.pad}>
-          <Navbar />
-          
+        <Navbar />
         <div>    
-          
           <Section1 />
           <TrustedBy />
           <Section2 />
-            
+          <Section3 />
             
             
               
             
           
           
-          {/* <Section3 />
-          <Section4 />
+          
+          {/* <Section4 />
           <Section5 />
           
           <Section6 />  

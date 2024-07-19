@@ -1,7 +1,6 @@
 import React from 'react';
 import YouTubeEmbeded from '../YouTubeEmbeded';
 import styles from './section2.module.scss';
-import s2styles from '../s2Ye.module.scss';
 
 function Section2() {
   return (

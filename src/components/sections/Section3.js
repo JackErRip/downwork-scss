@@ -1,45 +1,74 @@
 import React from 'react';
-
+import styles from './section3.module.scss';
 
 function Section3() {
-    return (
-        <div className='grid place-items-center order-3'>
-            <div className='bg-neutral-700 rounded-lg flex flex-col md:flex-row  '>
-                
-                <h1 className='px-10 py-6 text-zinc-50 font-extrabold text-4xl'>
-                    From small projects to complex initiatives, we can help <br /> <br />
-                    <p className='text-3xl font-medium'>
-                    Move projects across the    &nbsp; &nbsp;   
-                    Adapt and expand your   &nbsp; &nbsp;  
-                    Add more talent to your    &nbsp; &nbsp;
-                    Delegate a little or a lot to 
-                    </p>
-                    <p className='text-2xl font-medium'>
-                    finish line  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-                    workforce  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                    bench  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; our team
-                    </p>
-                    <br />
-                    <p className='text-base font-normal text-zinc-300'>
-                    Complete tasks and short-term projects with  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   
-                    Scale your team to get support for projects &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                    Integrate new roles into your team to &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                    Explore a variety of managed solutions to help
-                    </p>
-                    <p className='text-base font-normal text-zinc-300'>
-                    pros who can meet your business needs.   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                    with multiple deliverables anytime.    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                    accomplish core company objectives.    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
-                    you deliver complex projects.
-                    </p>
-                </h1>
-                
-                <br />
-                <br />
-            </div>
-            
+  return (
+    <div className={styles.section3}>
+      <div className={styles.container}>
+        <h1 className={styles.title}>
+          From small projects to complex initiatives, we can help
+        </h1>
+        <div className={styles.subtext}>
+          <ul className={styles.subtextul}>
+            <li className={styles.li1}>
+                Move projects across the finish line
+            </li>
+            <li className={styles.li2}>
+                Adapt and expand your workforce
+            </li>
+            <li className={styles.li3}>
+                Add more talent to your bench
+            </li>
+            <li className={styles.li4}>
+                Delegate a little or a lot to our team
+            </li>
+          </ul>
         </div>
-    ); 
+        {/* <div className={styles.details}> */}
+            <ul className={styles.sbul}>
+                <li className={styles.sbli1}>
+                    Complete tasks and short-term projects with pros who can meet your business needs.
+                </li>
+                <li className={styles.sbli2}>
+                    Scale your team to get support for projects with multiple deliverables anytime.
+                </li>
+                <li className={styles.sbli3}>
+                    Integrate new roles into your team to accomplish core company objectives. 
+                </li>
+                <li className={styles.sbli4}>
+                    Explore a variety of managed solutions to help you deliver complex projects.
+                </li>     
+            </ul>
+        {/* </div> */}
+        <div className={styles.mscreen}>
+            <ul className={styles.mscreen1}>
+                Move projects across the finish line
+                <li className={styles.mscreenli1}>
+                    Complete tasks and short-term projects with pros who can meet your business needs.
+                </li>
+            </ul>
+            <ul className={styles.mscreen2}>
+                Adapt and expand your workforce
+                <li className={styles.mscreenli2}>
+                    Scale your team to get support for projects with multiple deliverables anytime.
+                </li>
+            </ul>
+            <ul className={styles.mscreen3}>
+                Add more talent to your bench
+                <li className={styles.mscreenli3}>
+                    Integrate new roles into your team to accomplish core company objectives. 
+                </li>
+            </ul>
+            <ul className={styles.mscreen4}>
+                Delegate a little or a lot to our team
+                <li className={styles.mscreenli4}>
+                    Explore a variety of managed solutions to help you deliver complex projects.
+                </li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default Section3;
