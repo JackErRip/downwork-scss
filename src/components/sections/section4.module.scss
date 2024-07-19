@@ -1,0 +1,542 @@
+.section4 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 7.5rem;
+    width: calc(100% - 30px);
+    margin: 0 auto;
+    max-width: 1380px;
+}
+
+.section4container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.s4firstimage {
+    width: 90%;
+    margin-left: 1.5rem;
+}
+
+.s4secondimage {
+    width: 90%;
+    margin-left: 1rem;
+}
+
+.s4thirdimage {
+    width: 90%;
+    border-radius: 15px;
+}
+
+.s4firsttitle {
+    color: white;
+    font-size: 2.5rem;
+    font-family: Arial;
+    font-weight: 650;
+    margin: 1.5rem 0rem;
+}
+
+.s4firstsubtitle {
+    color: white;
+    font-size: 1.1rem;
+    font-family: Arial;
+    font-weight: 300;
+    margin-top: 1.75rem;
+    margin-bottom: 1.75rem;
+    margin-right: 7.5rem;
+}
+
+.s4secondtitle {
+    color: white;
+    font-size: 2.5rem;
+    font-family: Arial;
+    font-weight: 650;
+    margin: 1.5rem 0rem;
+}
+
+.s4secondsubtitle {
+    color: white;
+    font-size: 1.1rem;
+    font-family: Arial;
+    font-weight: 300;
+    margin-top: 4.55rem;
+    margin-bottom: 1.75rem;
+    margin-right: 7.5rem;
+}
+
+.s4thirdtitle {
+    color: white;
+    font-size: 2.5rem;
+    font-family: Arial;
+    font-weight: 650;
+    margin: 1.5rem 0rem;
+}
+
+.s4thirdsubtitle {
+    color: white;
+    font-size: 1.1rem;
+    font-family: Arial;
+    font-weight: 300;
+    margin-top: 1.75rem;
+    margin-bottom: 1.75rem;
+    margin-right: 7.5rem;
+}
+
+.s4first {
+    transform: scale(1);
+    transition: transform 0.1s ease-in-out;
+  
+    &:hover {
+      transform: scale(1.075);
+    }
+}
+
+.s4second {
+    transform: scale(1);
+    transition: transform 0.1s ease-in-out;
+    &:hover {
+      transform: scale(1.075);
+    }
+}
+
+.s4third {
+    transform: scale(1);
+    transition: transform 0.1s ease-in-out;
+  
+    &:hover {
+      transform: scale(1.075);
+    }
+}
+
+@media screen and (max-width: 964px) {
+    .s4firstimage {
+        width: 75%;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        flex-direction: row;
+        margin-left: 1rem;
+    }
+    
+    .s4secondimage {
+        width: 75%;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        flex-direction: row;
+        margin-left: 1rem;
+    }
+    
+    .s4thirdimage {
+        width: 75%;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        flex-direction: row;
+        margin-left: 1rem;
+    }
+    
+    .s4firsttitle {
+        color: white;
+        font-size: 2rem;
+        font-family: Arial;
+        font-weight: 650;
+        margin: 1.5rem 1rem;
+    }
+    
+    .s4firstsubtitle {
+        color: white;
+        font-size: 1rem;
+        font-family: Arial;
+        font-weight: 300;
+        margin-top: 1.75rem;
+        margin-bottom: 1.75rem;
+        margin-right: 7.5rem;
+        margin-left: 1rem;
+    }
+    
+    .s4secondtitle {
+        color: white;
+        font-size: 2rem;
+        font-family: Arial;
+        font-weight: 650;
+        margin: 1.5rem 1rem;
+    }
+    
+    .s4secondsubtitle {
+        color: white;
+        font-size: 1rem;
+        font-family: Arial;
+        font-weight: 300;
+        margin-top: 4.55rem;
+        margin-bottom: 1.75rem;
+        margin-right: 7.5rem;
+        margin-left: 1rem;
+    }
+    
+    .s4thirdtitle {
+        color: white;
+        font-size: 2rem;
+        font-family: Arial;
+        font-weight: 650;
+        margin: 1.5rem 1rem;
+    }
+    
+    .s4thirdsubtitle {
+        color: white;
+        font-size: 1rem;
+        font-family: Arial;
+        font-weight: 300;
+        margin-top: 1.75rem;
+        margin-bottom: 1.75rem;
+        margin-right: 7.5rem;
+        margin-left: 1rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .s4firstimage {
+        width: 75%;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        flex-direction: row;
+        margin-left: 1rem;
+    }
+    
+    .s4secondimage {
+        width: 75%;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        flex-direction: row;
+        margin-left: 1rem;
+    }
+    
+    .s4thirdimage {
+        width: 75%;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        flex-direction: row;
+        margin-left: 1rem;
+    }
+    
+    .s4firsttitle {
+        color: white;
+        font-size: 1.5rem;
+        font-family: Arial;
+        font-weight: 650;
+        margin: 1.5rem 1rem;
+    }
+    
+    .s4firstsubtitle {
+        color: white;
+        font-size: 0.75rem;
+        font-family: Arial;
+        font-weight: 300;
+        margin-top: 1.75rem;
+        margin-bottom: 1.75rem;
+        margin-right: 7.5rem;
+        margin-left: 1rem;
+    }
+    
+    .s4secondtitle {
+        color: white;
+        font-size: 1.5rem;
+        font-family: Arial;
+        font-weight: 650;
+        margin: 1.5rem 1rem;
+    }
+    
+    .s4secondsubtitle {
+        color: white;
+        font-size: 0.75rem;
+        font-family: Arial;
+        font-weight: 300;
+        margin-top: 3.35rem;
+        margin-bottom: 1.75rem;
+        margin-right: 7.5rem;
+        margin-left: 1rem;
+    }
+    
+    .s4thirdtitle {
+        color: white;
+        font-size: 1.5rem;
+        font-family: Arial;
+        font-weight: 650;
+        margin: 1.5rem 1rem;
+    }
+    
+    .s4thirdsubtitle {
+        color: white;
+        font-size: 0.75rem;
+        font-family: Arial;
+        font-weight: 300;
+        margin-top: 1.75rem;
+        margin-bottom: 1.75rem;
+        margin-right: 7.5rem;
+        margin-left: 1rem;
+    }
+}
+
+//mobile
+
+@media screen and (max-width: 640px) {
+    .section4container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .s4first {
+        transform: scale(1);
+        transition: transform 0.1s ease-in-out;
+    
+        // &:hover {
+        // transform: scale(1.075);
+        // }
+    }
+
+    .s4second {
+        transform: scale(1);
+        transition: transform 0.1s ease-in-out;
+        // &:hover {
+        // transform: scale(1.075);
+        // }
+    }
+
+    .s4third {
+        transform: scale(1);
+        transition: transform 0.1s ease-in-out;
+    
+        // &:hover {
+        // transform: scale(1.075);
+        // }
+    }
+
+    // .s4firstimage {
+    //     width: 100%;
+        
+    // }
+    
+    // .s4secondimage {
+    //     width: 100%;
+    // }
+    
+    // .s4thirdimage {
+    //     width: 100%;
+    // }
+    .s4firstimage {
+        position: relative;
+        width: 95%;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        flex-direction: column;
+    }
+    
+    .s4secondimage {
+        width: 95%;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        flex-direction: column;
+        margin-left: 1rem;
+    }
+    
+    .s4thirdimage {
+        width: 85%;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        flex-direction: column;
+        margin-left: 2.5rem;
+    }
+    
+    .s4firsttitle {
+        color: white;
+        font-size: 1.5rem;
+        font-family: Arial;
+        font-weight: 650;
+        margin: 1.5rem 1rem;
+    }
+    
+    .s4firstsubtitle {
+        color: white;
+        font-size: 0.75rem;
+        font-family: Arial;
+        font-weight: 300;
+        margin-top: 1.75rem;
+        margin-bottom: 1.75rem;
+        margin-right: 7.5rem;
+        margin-left: 1rem;
+    }
+    
+    .s4secondtitle {
+        color: white;
+        font-size: 1.5rem;
+        font-family: Arial;
+        font-weight: 650;
+        margin: 1.5rem 1rem;
+    }
+    
+    .s4secondsubtitle {
+        color: white;
+        font-size: 0.75rem;
+        font-family: Arial;
+        font-weight: 300;
+        margin-top: 3.35rem;
+        margin-bottom: 3.75rem;
+        margin-right: 7.5rem;
+        margin-left: 1rem;
+    }
+    
+    .s4thirdtitle {
+        color: white;
+        font-size: 1.5rem;
+        font-family: Arial;
+        font-weight: 650;
+        margin: 1.5rem 1rem;
+    }
+    
+    .s4thirdsubtitle {
+        color: white;
+        font-size: 0.75rem;
+        font-family: Arial;
+        font-weight: 300;
+        margin-top: 1.75rem;
+        margin-bottom: 1.75rem;
+        margin-right: 7.5rem;
+        margin-left: 1rem;
+    }
+}
+
+@media screen and (max-width: 412px) {
+    .section4container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .s4first {
+        transform: scale(1);
+        transition: transform 0.1s ease-in-out;
+    
+        // &:hover {
+        // transform: scale(1.075);
+        // }
+    }
+
+    .s4second {
+        transform: scale(1);
+        transition: transform 0.1s ease-in-out;
+        // &:hover {
+        // transform: scale(1.075);
+        // }
+    }
+
+    .s4third {
+        transform: scale(1);
+        transition: transform 0.1s ease-in-out;
+    
+        // &:hover {
+        // transform: scale(1.075);
+        // }
+    }
+    
+    // .s4firstimage {
+    //     width: 100%;
+        
+    // }
+    
+    // .s4secondimage {
+    //     width: 100%;
+    // }
+    
+    // .s4thirdimage {
+    //     width: 100%;
+    // }
+    .s4firstimage {
+        position: relative;
+        width: 85%;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        flex-direction: column;
+    }
+    
+    .s4secondimage {
+        width: 85%;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        flex-direction: column;
+        margin-left: 1rem;
+    }
+    
+    .s4thirdimage {
+        width: 75%;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        flex-direction: column;
+        margin-left: 2.5rem;
+    }
+    
+    .s4firsttitle {
+        color: white;
+        font-size: 1.5rem;
+        font-family: Arial;
+        font-weight: 650;
+        margin: 1.5rem 1rem;
+    }
+    
+    .s4firstsubtitle {
+        color: white;
+        font-size: 0.75rem;
+        font-family: Arial;
+        font-weight: 300;
+        margin-top: 1.75rem;
+        margin-bottom: 1.75rem;
+        margin-right: 7.5rem;
+        margin-left: 1rem;
+    }
+    
+    .s4secondtitle {
+        color: white;
+        font-size: 1.5rem;
+        font-family: Arial;
+        font-weight: 650;
+        margin: 1.5rem 1rem;
+    }
+    
+    .s4secondsubtitle {
+        color: white;
+        font-size: 0.75rem;
+        font-family: Arial;
+        font-weight: 300;
+        margin-top: 3.35rem;
+        margin-bottom: 3.75rem;
+        margin-right: 7.5rem;
+        margin-left: 1rem;
+    }
+    
+    .s4thirdtitle {
+        color: white;
+        font-size: 1.5rem;
+        font-family: Arial;
+        font-weight: 650;
+        margin: 1.5rem 1rem;
+    }
+    
+    .s4thirdsubtitle {
+        color: white;
+        font-size: 0.75rem;
+        font-family: Arial;
+        font-weight: 300;
+        margin-top: 1.75rem;
+        margin-bottom: 1.75rem;
+        margin-right: 7.5rem;
+        margin-left: 1rem;
+    }
+}
