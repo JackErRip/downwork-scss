@@ -1,15 +1,14 @@
-// import './App.css'; // Ensure this file includes the CSS to handle body styles and other base styles
-import Section1 from './components/sections/Section1';
+import React from 'react';
+import Section1 from './components/sections/Section1/Section1';
 import TrustedBy from './components/TrustedBy';
-import Section2 from './components/sections/Section2';
-// import YouTubeEmbeded from './components/YouTubeEmbeded';
-import Section3 from './components/sections/Section3';
-import Section4 from './components/sections/Section4';
-import Section6 from './components/sections/Section6';
-import Section5 from './components/sections/Section5';
-// import Section7 from './components/sections/Section7';
+import Section2 from './components/sections/Section2/Section2';
+import Section3 from './components/sections/Section3/Section3';
+import Section4 from './components/sections/Section4/Section4';
+import Section6 from './components/sections/Section6/Section6';
+import Section5 from './components/sections/Section5/Section5';
 import Navbar from './components/Navbar';
 import styles from './app.module.scss';
+import CustomFooter from './components/customFooter';
 
 function App() {
   return (
@@ -22,20 +21,9 @@ function App() {
           <Section2 />
           <Section3 />
           <Section4 />
-            
-            
-              
-            
-          
-          
-          
-          {/* <Section4 />
-          <Section5 />
-          
-          <Section6 />  
-           */}
-          
+          {/* <Section5 /> */}
         </div>
+        <CustomFooter />
       </div>
     </div>
   );

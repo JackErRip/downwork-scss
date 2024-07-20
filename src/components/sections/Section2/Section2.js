@@ -1,5 +1,5 @@
 import React from 'react';
-import YouTubeEmbeded from '../YouTubeEmbeded';
+import YouTubeEmbeded from '../../YouTubeEmbeded';
 import styles from './section2.module.scss';
 
 function Section2() {

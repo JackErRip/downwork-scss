@@ -1,10 +1,11 @@
 import React from 'react';
-import YouTubeEmbeded from '../YouTubeEmbeded';
+import YouTubeEmbeded from '../../YouTubeEmbeded';
+import styles from './section5.module.scss';
 
 function Section5() {
   return (
-    <div>
-      <div>
+    <div className={styles.sectionFive}>
+      <div className={styles.container}>
         <h1>
           Get ahead with AI
         </h1>

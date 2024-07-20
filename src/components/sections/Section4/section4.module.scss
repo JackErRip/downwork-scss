@@ -84,28 +84,34 @@
 }
 
 .s4first {
-    transform: scale(1);
+    transform: scale(0.93);
     transition: transform 0.1s ease-in-out;
   
     &:hover {
-      transform: scale(1.075);
+      transform: scale(1);
+      background-color: rgba(94, 94, 94, 0.1);
+      border-radius: 20px;
     }
 }
 
 .s4second {
-    transform: scale(1);
+    transform: scale(0.93);
     transition: transform 0.1s ease-in-out;
     &:hover {
-      transform: scale(1.075);
+      transform: scale(1);
+      background-color: rgba(94, 94, 94, 0.1);
+      border-radius: 20px;
     }
 }
 
 .s4third {
-    transform: scale(1);
+    transform: scale(0.93);
     transition: transform 0.1s ease-in-out;
   
     &:hover {
-      transform: scale(1.075);
+      transform: scale(1);
+      background-color: rgba(94, 94, 94, 0.1);
+      border-radius: 20px;
     }
 }
 
@@ -290,7 +296,7 @@
     }
     
     .s4first {
-        transform: scale(1);
+        transform: scale(0.93);
         transition: transform 0.1s ease-in-out;
     
         // &:hover {
@@ -299,7 +305,7 @@
     }
 
     .s4second {
-        transform: scale(1);
+        transform: scale(0.93);
         transition: transform 0.1s ease-in-out;
         // &:hover {
         // transform: scale(1.075);
@@ -307,7 +313,7 @@
     }
 
     .s4third {
-        transform: scale(1);
+        transform: scale(0.93);
         transition: transform 0.1s ease-in-out;
     
         // &:hover {
@@ -419,7 +425,7 @@
     }
 
     .s4first {
-        transform: scale(1);
+        transform: scale(0.93);
         transition: transform 0.1s ease-in-out;
     
         // &:hover {
@@ -428,7 +434,7 @@
     }
 
     .s4second {
-        transform: scale(1);
+        transform: scale(0.93);
         transition: transform 0.1s ease-in-out;
         // &:hover {
         // transform: scale(1.075);
@@ -436,7 +442,7 @@
     }
 
     .s4third {
-        transform: scale(1);
+        transform: scale(0.93);
         transition: transform 0.1s ease-in-out;
     
         // &:hover {
