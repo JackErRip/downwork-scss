@@ -73,3 +73,111 @@
         align-items: center; /* Center the content vertically */
     }
 }
+
+
+
+//Section5
+
+
+
+.s5ye {
+    width: 100%; /* Set the container to take full width */
+    max-width: 800px; /* Set a max width if you want to limit the size */
+    padding: 0.75rem 0rem; /* Adjust padding as needed */
+    padding-left: 1rem;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column; /* Use column for vertical stacking */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+}
+
+.s5ye iframe {
+    width: 640px; /* Make the iframe take full width of the container */
+    height: 360px; /* Set a specific height */
+    border-radius: 20px; /* Optional: Add border-radius if needed */
+}
+
+.s5yemobile {
+    display: none;
+}
+
+@media screen and (max-width: 1243px) {
+    .s5ye iframe {
+        width: 533px; /* Make the iframe take full width of the container */
+        height: 300px; /* Set a specific height */
+        border-radius: 20px; /* Optional: Add border-radius if needed */
+    }
+}
+
+@media screen and (max-width: 1111px) {
+    .s5ye iframe {
+        width: 427px; /* Make the iframe take full width of the container */
+        height: 244px; /* Set a specific height */
+        border-radius: 20px; /* Optional: Add border-radius if needed */
+    }
+}
+
+@media screen and (max-width: 827px) {
+    .s5ye iframe {
+        width: 348px; /* Make the iframe take full width of the container */
+        height: 196px; /* Set a specific height */
+        border-radius: 20px; /* Optional: Add border-radius if needed */
+    }
+}
+
+@media screen and (max-width: 764px) {
+    .s5yemobile {
+        display: flex;
+    }
+    .s5yemobile iframe {
+        border-radius: 20px;    
+        width: 498px;
+        height: 280px;
+    }
+    .s5ye {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 605px) {
+    .s5yemobile {
+        display: flex;
+    }
+    .s5yemobile iframe {
+        border-radius: 20px;    
+        width: 356px;
+        height: 200px;
+    }
+    .s5ye {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .s5yemobile {
+        display: flex;
+    }
+    .s5yemobile iframe {
+        border-radius: 20px;    
+        width: 256px;
+        height: 144px;
+    }
+    .s5ye {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 364px) {
+    .s5yemobile {
+        display: flex;
+    }
+    .s5yemobile iframe {
+        border-radius: 20px;    
+        width: 204px;
+        height: 115px;
+    }
+    .s5ye {
+        display: none;
+    }
+}
