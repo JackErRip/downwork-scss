@@ -12,7 +12,7 @@ function Section5() {
         <h2 className={styles.subtitle}>
           Partner with independent talent on Upwork to help AI work for your business
         </h2>
-        <YouTubeEmbeded classname="s5yemobile" ytLink="https://www.youtube.com/embed/GtL1huin9EE" />
+        <YouTubeEmbeded classname="sfiveyemobile" ytLink="https://www.youtube.com/embed/GtL1huin9EE" />
         <div className={styles.subtext}>
           <p className={styles.ptextspace}>
             Build a custom chatbot
@@ -29,7 +29,7 @@ function Section5() {
         </div>
       </div>
       <div>
-        <YouTubeEmbeded classname="s5ye" ytLink="https://www.youtube.com/embed/GtL1huin9EE" />
+        <YouTubeEmbeded classname="sfiveye" ytLink="https://www.youtube.com/embed/GtL1huin9EE" />
       </div>
     </div>
   );

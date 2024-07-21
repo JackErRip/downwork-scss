@@ -19,7 +19,7 @@ function Section2() {
         </ol>
       </div>
       <div className={styles.yecontainerlandscape}>
-          <YouTubeEmbeded classname='s2ye'  ytLink={`https://www.youtube.com/embed/EE-xtCF3T94`} />
+          <YouTubeEmbeded classname='stwoye'  ytLink={`https://www.youtube.com/embed/EE-xtCF3T94`} />
         </div>
     </div>
   );
