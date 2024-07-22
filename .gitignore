@@ -21,3 +21,8 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+
+
+# Ignore section7backup.txt
+src/components/sections/Section7/section7backup.txt

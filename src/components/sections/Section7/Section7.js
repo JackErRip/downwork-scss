@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import styles from './section7.module.scss';
 
 function Section7() {
   const [showSecondSection, setShowSecondSection] = useState(false);
@@ -8,8 +9,16 @@ function Section7() {
       const windowHeight = window.innerHeight;
       const scrollPosition = window.scrollY;
 
-      // Change to the second section when scrolled more than the window height
-      if (scrollPosition > windowHeight / 2) {
+      // Get the offset position of the image container
+      const imageContainer = document.querySelector(`.${styles.imageContainer}`);
+      const imageContainerOffset = imageContainer.offsetTop;
+      const imageContainerHeight = imageContainer.offsetHeight;
+
+      // Calculate the middle point of the image container
+      const middlePoint = imageContainerOffset + imageContainerHeight / 2;
+
+      // Change to the second section when scrolled more than the middle point
+      if (scrollPosition > middlePoint - windowHeight / 1.75) {
         setShowSecondSection(true);
       } else {
         setShowSecondSection(false);
@@ -23,49 +32,18 @@ function Section7() {
   }, []);
 
   return (
-    <div>
-      <h1>
-        Enterprise solutions to scale a winning talent strategy
-      </h1>
-
-      <div>
-        {/* First Section */}
-        <div
-          style={{
-            position: 'absolute',
-            inset: 0,
-            transition: 'opacity 1s ease-in-out',
-            opacity: showSecondSection ? 0 : 1,
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            justifyContent: 'center',
-          }}
-        >
+    <div className={styles.sectionSeven}>
+      <div className={styles.desktop}>
+        <h1 className={styles.title}>
+          Enterprise solutions to scale a winning talent strategy
+        </h1>
+        <div className={styles.imageContainer}>
           <img
             src={`${process.env.PUBLIC_URL}/Section7 Background.png`}
             alt="Section 7"
-            style={{
-              width: '100%',
-              height: '100%',
-              objectFit: 'cover',
-              borderRadius: '10px',
-              boxShadow: '0px 10px 15px rgba(0, 0, 0, 0.1)',
-            }}
+            className={`${styles.firstSectionImage}`}
           />
-          <div
-            style={{
-              position: 'absolute',
-              top: '25%',
-              left: '25%',
-              backgroundColor: 'rgba(0, 0, 0, 0.75)',
-              padding: '1.5rem',
-              borderRadius: '10px',
-              boxShadow: '0px 10px 15px rgba(0, 0, 0, 0.1)',
-              color: 'white',
-              maxWidth: '20rem',
-            }}
-          >
+          <div className={`${styles.firstSectionText} ${showSecondSection ? styles.hidden : ''}`}>
             <h2>Track talent end-to-end</h2>
             <p>
               Do it all in one place, from shortlisting top candidates to project management to collaboration tools.
@@ -78,57 +56,15 @@ function Section7() {
             <p>
               Use our global classification services to protect your business from legal risks.
             </p>
-            <button
-              style={{
-                marginTop: '1rem',
-                backgroundColor: '#22c55e',
-                color: 'white',
-                padding: '0.5rem 1rem',
-                borderRadius: '5px',
-              }}
-            >
-              Contact us
-            </button>
+            <button>Contact us</button>
           </div>
-        </div>
 
-        {/* Second Section */}
-        <div
-          style={{
-            position: 'absolute',
-            inset: 0,
-            transition: 'opacity 1s ease-in-out',
-            opacity: showSecondSection ? 1 : 0,
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            justifyContent: 'center',
-          }}
-        >
           <img
             src={`${process.env.PUBLIC_URL}/Section7 Background Inverted.png`}
             alt="Section 7 Inverted"
-            style={{
-              width: '100%',
-              height: '100%',
-              objectFit: 'cover',
-              borderRadius: '10px',
-              boxShadow: '0px 10px 15px rgba(0, 0, 0, 0.1)',
-            }}
+            className={`${styles.secondSectionImage} ${showSecondSection ? styles.visible : styles.hidden}`}
           />
-          <div
-            style={{
-              position: 'absolute',
-              top: '25%',
-              right: '25%',
-              backgroundColor: 'rgba(0, 0, 0, 0.75)',
-              padding: '1.5rem',
-              borderRadius: '10px',
-              boxShadow: '0px 10px 15px rgba(0, 0, 0, 0.1)',
-              color: 'white',
-              maxWidth: '20rem',
-            }}
-          >
+          <div className={`${styles.secondSectionText} ${showSecondSection ? styles.visible : styles.hidden}`}>
             <h2>Governance and controls</h2>
             <p>
               Create contracts and onboarding flows and use reporting tools that fit your needs and scale your business.
@@ -141,18 +77,56 @@ function Section7() {
             <p>
               Engage, onboard, and manage your hybrid team worry-free with our compliant talent marketplace.
             </p>
-            <button
-              style={{
-                marginTop: '1rem',
-                backgroundColor: '#22c55e',
-                color: 'white',
-                padding: '0.5rem 1rem',
-                borderRadius: '5px',
-              }}
-            >
-              Contact us
-            </button>
+            <button>Contact us</button>
           </div>
+        </div>
+      </div>
+      <div className={styles.mobile}>
+        <h1 className={styles.titleMobile}>
+            Enterprise solutions to scale a winning talent strategy
+        </h1>
+        <div className={styles.subText}>
+          <ul>
+            Track talent end-to-end
+            <li>
+              Do it all in one place, from shortlisting top candidates to project management to collaboration tools.
+            </li>
+          </ul>
+          <ul>
+            Work with talent you trust
+            <li>
+              Bring in talent you already know and manage their experience through one platform.
+            </li>
+          </ul>
+          <ul>
+            Secure compliance and work protection
+            <li>
+              Use our global classification services to protect your business from legal risks.
+            </li>
+          </ul>
+          <ul>
+            Governance and controls
+            <li>
+              Create contracts and onboarding flows and use reporting tools that fit your needs and scale your business.
+            </li>
+          </ul>
+          <ul>
+            Payroll and staffing
+            <li>
+              Pay your distributed team with Upwork Payroll so you can focus on growing your business instead of time-consuming admin.
+              <a href='/'>Learn more</a>
+            </li>
+          </ul>
+          <ul>
+            Safety and security
+            <li>
+              Engage, onboard, and manage your hybrid team worry-free with our compliant talent marketplace. 
+              <a href='/'>Learn more</a>
+            </li>
+          </ul>
+          <button>
+            Contact us
+          </button>
         </div>
       </div>
     </div>

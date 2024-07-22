@@ -1,0 +1,296 @@
+.sectionSeven {
+    max-width: 1380px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 5rem;
+    padding-bottom: 8rem;
+  }
+  
+.desktop {
+  display: block;
+}
+
+.mobile {
+  display: none;
+}
+
+  .title {
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-family: Arial;
+    display: flex;
+    padding-right: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 1380px;
+  }
+  
+  .imageContainer {
+    max-width: 1380px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .firstSectionImage {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  
+  .secondSectionImage {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    z-index: 1;
+  }
+  
+  .visible {
+    opacity: 1;
+  }
+  
+  .hidden {
+    opacity: 0;
+  }
+  
+  .firstSectionText,
+  .secondSectionText {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.65);
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border-radius: 16px;
+    width: 370px;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: opacity 1s ease-in-out, visibility 1s;
+    z-index: 2;
+  }
+  
+  .firstSectionText {
+    margin-left: 12.5rem;
+  }
+  
+  .secondSectionText {
+    margin-left: 49.5rem;
+  }
+  
+  .firstSectionText h2,
+  .secondSectionText h2 {
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 1.5rem;
+    font-family: Arial;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 2rem;
+  }
+  
+  .firstSectionText p,
+  .secondSectionText p {
+    color: #e2e2e2;
+    font-weight: 500;
+    font-size: 1.25rem;
+    font-family: Calibri;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  
+  .firstSectionText button,
+  .secondSectionText button {
+    margin-top: 2rem;
+    margin-bottom: 2.5rem;
+    color: #ffffff;
+    background-color: #00ff2a;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: Arial;
+    border-radius: 8px;
+    padding-left: 0.65rem;
+    padding-right: 0.65rem;
+    padding-top: 0.65rem;
+    padding-bottom: 0.65rem;
+    cursor: pointer;
+    border: none;
+    transform: scale(1);
+    transition: transform 0.1s ease-in-out;
+    &:hover {
+      transform: scale(1.05);
+      background-color: #becb00;
+    }
+  }
+   
+.titleMobile {
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-family: Arial;
+  display: flex;
+  padding-right: 1rem;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 1380px;
+  width: calc(100% - 30px);
+}
+
+@media screen and (max-width: 1185px) {
+  .firstSectionText,
+  .secondSectionText {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.65);
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border-radius: 16px;
+    width: 273.230px;
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: opacity 1s ease-in-out, visibility 1s;
+    z-index: 2;
+  }
+  .firstSectionText {
+    margin-left: 9rem;
+  }
+  
+  .secondSectionText {
+    margin-left: 35rem;
+  }
+  
+  .firstSectionText h2,
+  .secondSectionText h2 {
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 1rem;
+    font-family: Arial;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 1rem;
+  }
+  
+  .firstSectionText p,
+  .secondSectionText p {
+    color: #e2e2e2;
+    font-weight: 500;
+    font-size: 0.85rem;
+    font-family: Calibri;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  
+  .firstSectionText button,
+  .secondSectionText button {
+    margin-top: 2rem;
+    margin-bottom: 2.5rem;
+    color: #ffffff;
+    background-color: #00ff2a;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: Arial;
+    border-radius: 8px;
+    padding-left: 0.65rem;
+    padding-right: 0.65rem;
+    padding-top: 0.65rem;
+    padding-bottom: 0.65rem;
+    cursor: pointer;
+    border: none;
+    transform: scale(1);
+    transition: transform 0.1s ease-in-out;
+    &:hover {
+      transform: scale(1.05);
+      background-color: #becb00;
+    }
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: calc(100% - 30px);
+  }
+  .subText {
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    text-align: start;
+  }
+  .subText ul {
+    font-family: Arial;
+    font-size: 1rem;
+    color: #ffffff;
+    font-weight: 800;
+  }
+  .subText li {
+    padding-top: 0.5rem;
+    list-style-type: none;
+    color: #e2e2e2;
+    font-weight: 400;
+    font-family: Calibri;
+    font-size: 0.6;
+  }
+  .subText a {
+    color: #00ff2a;
+    padding-left: 0.35rem;
+    transition: transform 0.1s ease-in-out;
+    &:hover {
+      color: #00b01d;
+    }
+  }
+  .subText button {
+    background-color: hsl(from hsl(80, 100%, 44%) h s l);
+    font-size: 24px;
+    color: white;
+    font-weight: 900;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    font-family: Arial, sans-serif;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 3rem; /* Move the button down by 30rem */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1380px;
+    transform: scale(0.8);
+    transition: transform 0.1s ease-in-out;
+    &:hover {
+    transform: scale(0.85);
+   }
+  }
+}

@@ -6,6 +6,7 @@ import Section3 from './components/sections/Section3/Section3';
 import Section4 from './components/sections/Section4/Section4';
 import Section5 from './components/sections/Section5/Section5';
 import Section6 from './components/sections/Section6/Section6';
+import Section7 from './components/sections/Section7/Section7';
 import Navbar from './components/Navbar';
 import styles from './app.module.scss';
 import CustomFooter from './components/customFooter';
@@ -23,6 +24,7 @@ function App() {
           <Section4 />
           <Section5 />
           <Section6 />
+          <Section7 />
         </div>
         <CustomFooter />
       </div>
